@@ -82,8 +82,6 @@ matrix:
     
   - stage: release
     # Advanced: optionally overwrite your default `script` step to skip the tests
-    script:
-      - make
     deploy:
       provider: script
       skip_cleanup: true

@@ -11,11 +11,11 @@
         }],
 	["@semantic-release/git", {
 	    "assets": ["bench/__init__.py"],
-            "message": "chore(release): Bumped to Version ${nextRelease.version}\n\n${nextRelease.notes}'
+            "message": "chore(release): Bumped to Version ${nextRelease.version}\n\n${nextRelease.notes}"
         }],
 	["@semantic-release/github", {
       		"assets": [
-        		{"path": 'dist/frappe_bench-${nextRelease.version}-py2.py3-none-any.whl"},
+        		{"path": "dist/*"},
       		]
 	}]
     ]

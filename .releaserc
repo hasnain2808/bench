@@ -19,7 +19,7 @@
 			]
 		}],
 		["@semantic-release/exec", {
-			"publish": "twine upload -r testpypi dist/* -u ${TEST_PYPI_USERNAME} -p ${TEST_PYPI_PASSWORD}"
+			"publishCmd": "twine upload -r testpypi dist/* -u ${TEST_PYPI_USERNAME} -p ${TEST_PYPI_PASSWORD}"
 		}]
     	]
 }

@@ -6,7 +6,7 @@
         ["@semantic-release/exec", {
 		"shell": "python setup.py bdist_wheel --universal && sed -i 's/[0-9].[0-9].[0-9]/${nextRelease.version}[1:]/' bench/__init__py"
 	}],
-	"@semantic-release/git"
+	"@semantic-release/git",
 	["@semantic-release/github", {
       		"assets": [
         		{"path": "dist/frappe_bench-${nextRelease.version[1:]}-py2.py3-none-any.whl", "label": "frappe_bench-${nextRelease.version[1:]}-py2.py3-none-any.whl"},

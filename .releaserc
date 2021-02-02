@@ -7,7 +7,7 @@
 		"shell": "python setup.py bdist_wheel --universal"
 	}],
         ["@semantic-release/exec", {
-                "shell": "sed -ir \"s/[0-9].[0-9].[0-9]/$nextRelease.version[1:]/\" bench/__init__.py"
+                "prepareCmd": 'sed -ir "s/[0-9].[0-9].[0-9]/${nextRelease.version}/" bench/__init__.py'
         }],
 	"@semantic-release/git",
 	["@semantic-release/github", {

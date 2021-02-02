@@ -15,7 +15,7 @@
         }],
 	["@semantic-release/github", {
       		"assets": [
-        		{"path": "dist/frappe_bench-${nextRelease.version[1:]}-py2.py3-none-any.whl"},
+        		{"path": 'dist/frappe_bench-${nextRelease.version}-py2.py3-none-any.whl"},
       		]
 	}]
     ]
